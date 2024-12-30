@@ -1,0 +1,191 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.error {
+    color: red;
+    font-size: 0.9em;
+    margin-top: 10px;
+}
+
+body {
+    background-color: aquamarine;
+    font-family: 'Trebuchet MS';
+}
+
+nav {
+    background-color: #333;
+    border: 0px;
+    padding: 10px;
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+}
+
+nav button {
+    color: white;
+    border-radius: 20px;
+    background-color: #333;
+    border: 2px solid #efefef;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+nav button:hover {
+    background-color: #efefef;
+    color: black;
+}
+
+.card {
+    background-color: white;
+    font-size: large;
+    padding: 3%;
+    border-radius: 20px;
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5% 30%;
+}
+
+form { display: flex; flex-direction: column; }
+
+form fieldset {
+    border: none; 
+    padding: 5px 20px;
+}
+
+
+form label {
+    margin-bottom: 5px;
+    text-align: left; 
+    font-size: medium;
+    display: inline-block; 
+    width: 100%;
+}
+
+form input {
+    width: 90%;
+    padding: 10px;
+    margin-bottom: 15px; 
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.submit { 
+    color: white;
+    border-radius: 20px;
+    background-color: #139025;
+    border: 2px solid white;
+    padding: 10px 20px;
+    width: 150px;
+    align-self: center;
+    cursor: pointer; 
+}
+
+.submit:hover {
+    background-color: white;
+    color: rgb(10, 96, 33);
+    border: 2px solid rgb(10, 96, 33);
+}
+
+.take_notes {
+    background-color: rgb(86, 9, 83);
+    height: 40px;
+    padding: 20px;
+    border: 30px solid aquamarine;
+    border-radius: 50px;
+    display: flex;
+}
+
+.take_notes .notes { display: flex; flex-direction: row; width: 100%; gap: 20px; padding: 0px; align-items: center;}
+
+.take_notes input {
+    width: 90%;
+    height: 70%;
+    border-radius: 10px;
+    margin-top: 15px;
+    background-color: aquamarine;
+    color: rgb(86, 9, 83);
+}
+
+.take_notes button {
+    align-self: auto;
+    width: 50px; 
+    height: 48px; 
+    padding: 10px 15px; 
+    border-radius: 10px;
+    border: none;
+    background-color: aquamarine;
+    color: purple;
+    cursor: pointer;
+}
+
+.take_notes button:hover {
+    background-color: purple; 
+    color: aquamarine;
+    border: 2px solid aquamarine;
+}
+
+.show_notes {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 20px;
+}
+
+.note_card {
+    box-sizing: border-box;
+    width: 190px;
+    height: 254px;
+    background: rgba(217, 217, 217, 0.58);
+    border: 1px solid white;
+    box-shadow: 12px 17px 51px rgba(0, 0, 0, 0.22);
+    backdrop-filter: blur(6px);
+    border-radius: 17px;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.5s;
+    display: flex; 
+    flex-direction: column; 
+    justify-content: space-between; 
+    align-items: center; 
+    user-select: none;
+    font-weight: bolder;
+    color: black;
+    padding: 15px;
+}
+
+.note_card p {
+    flex-grow: 1; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+}
+
+.note_card button {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1em;
+    border: 0px solid transparent;
+    background-color: rgba(100,77,237,0.78);
+    border-radius: 1.25em;
+    transition: all 0.2s linear;
+    width: 94%;
+    margin-top: auto; 
+}
+
+.note_card button:hover {
+    box-shadow: 3.4px 2.5px 4.9px rgba(0, 0, 0, 0.35),
+        8.6px 6.3px 12.4px rgba(0, 0, 0, 0.035),
+        17.5px 12.8px 25.3px rgba(0, 0, 0, 0.045),
+        36.1px 26.3px 52.2px rgba(0, 0, 0, 0.055),
+        99px 72px 143px rgba(0, 0, 0, 0.08);
+}

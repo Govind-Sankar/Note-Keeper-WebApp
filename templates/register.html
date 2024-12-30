@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Notes Keeper</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <header>
+        <nav>
+            <label class="title" style="color: white; font-size: xx-large; align-self: center;padding-right: 74%;">Notes Keeper</label>
+            <a href="{{ url_for('register') }}">
+                <button>Register</button>
+            </a>
+            <a href="{{ url_for('login') }}">
+                <button>Login</button>
+            </a>
+        </nav>
+    </header>
+    <div class = "container">
+        <section class="card">
+            <b id="title">Register</b>
+            <br><br>
+            <form method="post">
+                <fieldset>
+                    <label>Username: </label> <input type="text" name="username" placeholder="Enter your Username" required> <br>
+                    <label>Password: </label> <input type="password" name="password" placeholder="Enter your Password" required> <br>
+                    <label>Confirm Password: </label> <input type="password" name="confirm_password" placeholder="Retype your Password" required> <br>
+                    {% if error %}
+                    <p class="error">{{ error }}</p>
+                    {% endif %} <br>
+                </fieldset>
+                <button class="submit" type="submit">Register</button>
+            </form>
+            <br>
+            Existing user? <a href="{{ url_for('login') }}">Login Here</a>
+        </section>
+    </div>
+</body>
+</html>
